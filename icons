@@ -1,0 +1,18 @@
+
+
+<!-- piggybox icon -->
+<lord-icon
+    src="https://cdn.lordicon.com/ksdjzsym.json"
+    trigger="hover"
+    stroke="light"
+    style="width:250px;height:250px">
+</lord-icon>
+
+<!-- transfer icon -->
+<FontAwesomeIcon icon={faPaperPlane} size="xl" />
+
+<!-- savings group icon -->
+<FontAwesomeIcon icon={faCubesStacked} />
+
+<!-- accounts icon -->
+<FontAwesomeIcon icon={faCreditCard} size='xl' />

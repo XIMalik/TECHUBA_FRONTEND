@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 100px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+  border-radius: 100px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3e3d3d;
+  border-radius: 100px;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+
+/* For WebKit browsers */
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.notfoundbutton{
+  background-color: white;
+  margin-top: 30px;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 200px;
+}
+
+.auth_buttons button{
+  background-color: white;
+  margin-top: 50px;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 150px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left vertically */
+  gap: 5px;
+  justify-content: flex-start; /* Align items to the left horizontally */
+  color: rgba(255, 255, 255, 0.506);
+  width: 100%;
+}
+
+.field input {
+  background-color: #2D2A32;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 100%;
+  transition: transform 0.3s ease; /* Add transition property */
+
+}
+
+.field label{
+  color: rgba(255, 255, 255, 0.506);
+  font-size: 12px;
+  text-transform: uppercase ;
+}
+
+.leaderboard label{
+  color: rgba(255, 255, 255, 0.506);
+  font-size: 12px;
+  text-transform: uppercase ;
+}
+
+.field input:focus {
+  background-color: #2D2A32;
+  outline-color: rgba(255, 255, 255, 0.506);
+  outline: none;
+  transform: scale(1.02); /* Changed from 'scale' to 'transform' for scaling */
+}
+
+.submit_signup {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 100%;
+}
+
+.create-account span{
+  color: rgba(255, 255, 255, 0.506);
+  font-size: 13px;
+}
+
+.select{
+  background-color: #2D2A32;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 100%;
+}
+
+.select option{
+  background-color: #2D2A32;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  width: 100%;
+}
+
+.auth_link a{
+  color: white;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Auto for header, 1fr for the remaining space */
+  grid-template-rows: calc(10% - (-5px)) 1fr; /* Adjusted for gap */
+  grid-template-areas:
+    'header header'
+    'sidebar main-content';
+  gap: 5px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main-content;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.nav-item{
+  background: rgba(18, 18, 18, 0.2);
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-radius: 7px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s ease; /* Add smooth transition */
+
+}
+
+.nav-item:hover{
+  background: #2D2A32;
+}
+
+/* account_details */
+
+.account_details h1{
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.account_details span{
+  font-size: 10px;
+  color: #ffffff83;
+  font-weight: bold;
+}
+.deposits_amount span{
+  font-size: 10px;
+  color: #ffffff83;
+  font-weight: bold;
+}
+.currency{
+  font-size: 10px;
+  color: #ffffff83;
+  font-weight: bold;
+}
+
+.account_details h2{
+  font-size: 15px;
+  color: #ffffff83;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+}
+
+.account_action_toggles{
+  display: flex;
+}
+.account_action_toggles h1{
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.account_action_toggles h1:hover{
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #2d2a3247;
+
+}
+
+
+.transaction_history_item span{
+  font-weight: medium;
+  font-size: 8px;
+  color: #f8f8f877;
+}
+.transaction_history_item h2{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.moreinfo_field span{
+  font-weight: normal;
+}
+.moreinfo_field h2{
+  color: white;
+  font-weight: bold;
+}
